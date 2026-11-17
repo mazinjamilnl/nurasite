@@ -1,13 +1,14 @@
 # Woorden Verbinden — vertaler & tolk
 
-Een eenvoudige MVC-website voor freelance vertaal- en tolkdiensten in het Nederlands, Engels en Arabisch.
+Een eenvoudige PHP MVC-website voor freelance vertaal- en tolkdiensten in het Nederlands, Engels en Arabisch.
 
 ## Structuur
 
-- `index.php` — entry point / router
-- `app/Controllers/HomeController.php` — verwerkt de pagina en formulieraanvragen
+- `index.php` — entry point en router (`?page=diensten`, `?page=over-mij`, `?page=contact`)
+- `app/Controllers/` — afzonderlijke controller per pagina
+- `app/Views/layout.php` — gedeelde HTML-layout en navbar
+- `app/Views/` — afzonderlijke views voor startpagina, diensten, over mij en contact
 - `app/Models/ContactRequest.php` — valideert en verstuurt contactaanvragen
-- `app/Views/home.php` — HTML-weergave
 - `public/css/style.css` — responsive ontwerp
 - `public/js/app.js` — taalkeuze, RTL-weergave en mobiele navigatie
 
