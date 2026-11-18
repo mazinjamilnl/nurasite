@@ -1,6 +1,12 @@
 .env
 .env.*
 !.env.example
+/app/config.local.php
 vendor/
 node_modules/
 *.log
+
+# XAMPP sendmail crash dumps
+/crash*.txt
+/storage/*
+!/storage/.htaccess
